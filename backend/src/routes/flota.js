@@ -1,0 +1,10 @@
+const r = require('express').Router();
+const c = require('../controllers/flotaController');
+const { auth, authorize } = require('../middleware/auth');
+r.get('/vencimientos', auth, c.getVencimientos);
+r.get('/', auth, c.getAll);
+r.get('/:id', auth, c.getOne);
+r.post('/', auth, authorize('administrador','logistica'), c.create);
+r.put('/:id', auth, authorize('administrador','logistica'), c.update);
+r.patch('/:id/posicion', auth, c.updatePosicion);
+module.exports = r;

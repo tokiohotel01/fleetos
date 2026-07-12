@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0b0f;--bg2:#111318;--bg3:#161820;--bg4:#1c1f2a;
+  --border:#ffffff0f;--border2:#ffffff18;--border3:#ffffff28;
+  --text:#e8eaf0;--text2:#9499aa;--text3:#5a5f6e;
+  --accent:#4f7cff;--accent2:#3d63d4;--accent-glow:#4f7cff22;
+  --green:#22c55e;--green-bg:#22c55e18;
+  --red:#ef4444;--red-bg:#ef444418;
+  --amber:#f59e0b;--amber-bg:#f59e0b18;
+  --purple:#a855f7;--purple-bg:#a855f718;
+  --teal:#14b8a6;--teal-bg:#14b8a618;
+  --r:10px;--r2:16px;
+}
+html,body{height:100%;font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);font-size:14px}
+#root{height:100%}
+::-webkit-scrollbar{width:4px;height:4px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--border3);border-radius:2px}
+a{text-decoration:none;color:inherit}
+button,input,select,textarea{font-family:inherit}
