@@ -4,7 +4,7 @@ const { auth } = require('../middleware/auth');
 r.post('/login', c.login);
 r.get('/me', auth, c.me);
 r.put('/change-password', auth, c.changePassword);
-r.post('/setup', async (req, res) => { try {
+r.get('/setup', async (req, res) => { try {
     const User = require('../models/User');
     const existe = await User.findOne({ email: 'admin@fleetos.com' });
     if (existe) return res.json({ message: 'Ya existe' });
